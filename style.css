@@ -1,0 +1,184 @@
+/*
+  ========================================
+  General Style
+  ========================================
+*/
+/* ----- Box Sizing ----- */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+section {
+	padding: 60px 0;
+}
+
+/* ----- Media ----- */
+
+img, video {
+	max-width: 100%;
+	height: auto;
+	padding: 5px;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+@font-face {
+	font-family: Lobster;
+	src: local("Lobster"), url("fonts/lobster.woff") format("woff");
+}
+h1, h2, h3, h4 {
+	font-weight: 600;
+	font-family: Arial;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.6em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+p {
+	font-size: 1.1em;
+	font-family: Arial;
+	text-align: justify;
+	line-height: 1.4em;
+}
+
+/*
+  ========================================
+  Backgrounds
+  ========================================
+*/
+
+.bgdark {
+	background-color: #00a0e3;
+	background: radial-gradient(rgb(0,160,227, .9), rgb(255,255,255, 0.9));
+}	
+.bglight {
+	background-color: #f7f8f8;
+}
+
+/*
+  ========================================
+  Primary Navigation
+  ========================================
+*/
+
+ul li {
+	font-size: 1.2em;
+	font-family: Arial;
+	text-align: center;
+	display: inline-block;
+	margin: 0 5px 0 5px;
+}
+a {
+	text-decoration: none;
+}
+.topheader-box * {
+	/*border: 1px solid #000;*/
+}
+.topheader-box {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+	align-items: center;
+}
+.topheader-box-logo, .topheader-box-nav {
+	/*justify-self: center;
+	align-self: center;*/
+}
+.hero-box {
+	display: grid;
+	grid-template-columns: 1fr;
+	background-image: url(images/hero-lutsk.jpg);
+	padding-top: 200px;
+	padding-bottom: 150px;
+	background-size: cover;
+}
+.hero-box h1 {
+	color:#fff;
+	background-color: #ccc;
+	width: 60%;
+	justify-self: center;
+	padding: 50px 100px;
+	background-color: rgb( 36, 36, 36, 0.5);
+}
+.about-box-txt p{
+	color: #0a0a0a;
+	}
+.about-box {
+	display: grid;	
+	grid-template-columns: 1fr 2fr;
+	}
+
+
+
+
+
+/* For mobile phones: */
+@media only screen and (min-width: 577px) {
+	.top-header-primary-nav-mobile {
+	display: none;
+}
+}
+@media only screen and (max-width: 576px) {
+section {
+	padding: 40px 25px 40px 10px;
+}
+.top-header {
+	grid-template-columns: 1fr;
+}
+.hero {
+	padding: 80px 0;
+}
+.hero h1>span {
+	font-size: 1em;
+	padding: 50px 20px;
+}
+.top-header-primary-nav {
+	display: none;
+}
+ul {
+	padding: 0;
+}
+ul li {
+	font-size: 1.2em;
+	font-family: Arial;
+	text-align: center;
+	display: block;
+	border: 1px solid #ccc;
+	padding: 15px 0px;
+	margin: 0;
+	background-color: #00a0e3;
+	color: #fff;
+}
+}
+.togo-box {
+	display: grid;	
+	grid-template-columns: 1fr 1fr 1fr;
+  }
+.content {
+	color:#00a0e3;
+}
